@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+ssh/*
+
+notebooks/bq.json
+notebooks/*
