@@ -3,6 +3,8 @@ FROM jupyter/scipy-notebook
 USER root
 
 RUN mkdir /notebooks
+RUN chmod 777 -R /notebooks
+
 RUN mkdir .ssh
 
 WORKDIR  /notebooks
