@@ -14,5 +14,5 @@ RUN apt-get install libpq-dev python-dev
 
 #RUN pip install psycopg2 pymysql google-cloud-bigquery paramiko sshtunnel mlflow=1.0.0
 
-RUN apt-get install -y python-dev libmysqlclient-dev
+RUN apt-get install -y python-dev libmysqlclient-dev libpq-dev
 RUN pip install -r /home/requirements.txt

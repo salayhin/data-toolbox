@@ -5,8 +5,8 @@ services:
     build:
       context: ./jupyter-notebook-docker
     ports:
-      - "8889:8888"
-    container_name: data-toolbox-notebook
+      - "8888:8888"
+    container_name: data-toolbox
     volumes:
       - /projects/data-engineering/data-lab/upwork/pipeline-security/data-toolbox/notebooks:/notebooks
 
@@ -18,7 +18,7 @@ services:
       POSTGRES_USER: 'admin'
       POSTGRES_PASSWORD: 'secret'
     ports: 
-      - "2345:5432"
+      - "5439:5432"
     volumes:
       - ./postgres-store:/var/lib/postgresql/data
 

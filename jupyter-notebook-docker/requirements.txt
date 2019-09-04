@@ -6,4 +6,7 @@ paramiko==2.6.0
 sshtunnel==0.1.5
 surprise
 mysqlclient
+sqlalchemy
+sqlalchemy-redshift
+urllib
 # mlflow==1.0.0
