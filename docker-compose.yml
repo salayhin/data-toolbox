@@ -8,7 +8,7 @@ services:
       - "8888:8888"
     container_name: data-toolbox
     volumes:
-      - /projects/data-engineering/data-lab/upwork/pipeline-security/data-toolbox/notebooks:/notebooks
+      - /home/ubuntu/data-toolbox/data-toolbox/notebooks:/notebooks
 
   postgres: 
     build:

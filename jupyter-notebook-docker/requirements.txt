@@ -8,5 +8,5 @@ surprise
 mysqlclient
 sqlalchemy
 sqlalchemy-redshift
-urllib
+#urllib
 # mlflow==1.0.0
