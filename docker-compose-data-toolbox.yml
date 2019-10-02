@@ -10,17 +10,17 @@ services:
     volumes:
       - /home/ubuntu/data-toolbox/notebooks:/notebooks
 
-  postgres: 
-    build:
-      context: ./postgres-docker
-    restart: always
-    environment:
-      POSTGRES_USER: 'admin'
-      POSTGRES_PASSWORD: 'secret'
-    ports: 
-      - "5439:5432"
-    volumes:
-      - ./postgres-store:/var/lib/postgresql/data
+  # postgres: 
+  #   build:
+  #     context: ./postgres-docker
+  #   restart: always
+  #   environment:
+  #     POSTGRES_USER: 'admin'
+  #     POSTGRES_PASSWORD: 'secret'
+  #   ports: 
+  #     - "5439:5432"
+  #   volumes:
+  #     - ./postgres-store:/var/lib/postgresql/data
 
   # cloud-sql-proxy:
   #     image: gcr.io/cloudsql-docker/gce-proxy:1.11
@@ -33,5 +33,5 @@ services:
   #     - /home/sirajus.salayhin/redash-latest/config:/root/.config
   #     ports:
   #     - 5432:5432
-volumes:
-  postgres-store:
+# volumes:
+#   postgres-store:
